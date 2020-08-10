@@ -1,0 +1,87 @@
+Data Validation : 211-246 completed
+Data Validation : 247-281 completed
+Data Validation : 282-317 completed
+Data Validation : 318-339 completed
+Data Validation : 340-351 completed 
+Data Validation : 352-365 completed
+Data Validation : 366-381 completed
+Data Validation : 382-419 completed
+Data Validation : 420-439 completed
+Data Validation : 440-455 completed
+
+
+#EMR Creation Script
+aws emr create-cluster --auto-scaling-role EMR_AutoScaling_DefaultRole --applications Name=Hadoop Name=Spark --bootstrap-actions '[{"Path":"s3://nurix-dev-072287052099/migration/qa/data_validation/scripts/test_env_installation_and_setup.sh","Name":"Custom action"}]' --ebs-root-volume-size 50 --ec2-attributes '{"KeyName":"northbay-UAT-2020-06-18","AdditionalSlaveSecurityGroups":["sg-0c44cf626e2793f74"],"InstanceProfile":"EMR_EC2_DefaultRole","ServiceAccessSecurityGroup":"sg-05f8a40eb5bdbd049","SubnetId":"subnet-0a20eeba16804db4e","EmrManagedSlaveSecurityGroup":"sg-069d8bf1260d598a1","EmrManagedMasterSecurityGroup":"sg-07466a3b2790c21c6","AdditionalMasterSecurityGroups":["sg-0c44cf626e2793f74"]}' --service-role EMR_DefaultRole --enable-debugging --release-label emr-5.30.1 --log-uri 's3n://aws-logs-072287052099-us-west-2/elasticmapreduce/' --name 'nbs_qa_test' --instance-groups '[{"InstanceCount":4,"BidPrice":"OnDemandPrice","EbsConfiguration":{"EbsBlockDeviceConfigs":[{"VolumeSpecification":{"SizeInGB":32,"VolumeType":"gp2"},"VolumesPerInstance":2}]},"InstanceGroupType":"CORE","InstanceType":"c4.8xlarge","Name":"Core - 2"},{"InstanceCount":1,"EbsConfiguration":{"EbsBlockDeviceConfigs":[{"VolumeSpecification":{"SizeInGB":32,"VolumeType":"gp2"},"VolumesPerInstance":2}]},"InstanceGroupType":"MASTER","InstanceType":"m5.xlarge","Name":"Master - 1"}]' --scale-down-behavior TERMINATE_AT_TASK_COMPLETION --region us-west-2
+
+# spark job submission -- 1 : 6:05 pm -- 6:17 pm -- Done
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 179 --upper_bound 200 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/179-200/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/179-200/dnatag/ligands_stats'
+
+# spark job submission -- 2 : 6:20 pm -- 6:32 pm -- Done
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 201 --upper_bound 210 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/201-210/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/201-210/dnatag/ligands_stats'
+
+# spark job submission -- 3 : 6:38 pm -- 6:51 pm -- Done
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 211 --upper_bound 246 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/211-246/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/211-246/dnatag/ligands_stats'
+
+
+# spark job submission -- 4 : 6:58 pm -- 7:11 pm -- Done
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 247 --upper_bound 281 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/247-281/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/247-281/dnatag/ligands_stats'
+
+# spark job submission -- 5 : 7:18 pm -- 7:38 pm -- In-Progress
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 282 --upper_bound 317 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/282-317/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/282-317/dnatag/ligands_stats'
+
+# spark job submission -- 6 : 7:48 pm -- 8:12 pm
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 318 --upper_bound 339 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/318-339/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/318-339/dnatag/ligands_stats'
+
+# spark job submission -- 7 : 8:14 pm -- 8:34 pm
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 340 --upper_bound 351 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/340-351/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/340-351/dnatag/ligands_stats'
+
+# spark job submission -- 8 : 8:40 pm -- 8:54 pm
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 352 --upper_bound 365 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/352-365/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/352-365/dnatag/ligands_stats'
+
+# spark job submission -- 9 : 9:05 pm -- 9:35 pm
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 366 --upper_bound 381 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/366-381/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/366-381/dnatag/ligands_stats'
+
+# spark job submission -- 10 : 9:55 pm -- 10:10 pm
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 382 --upper_bound 419 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/382-419/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/382-419/dnatag/ligands_stats'
+
+# spark job submission -- 11 : 10:12 pm -- 10:24 pm
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 420 --upper_bound 439 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/420-439/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/420-439/dnatag/ligands_stats'
+
+# spark job submission -- 12 : 9:55 pm -- 9:?? pm
+spark-submit data_validation.py --batch True --bucket 'oracle-ligands-stats-data' \
+--lower_bound 382 --upper_bound 419 --table_name 'dnatag.ligands_stats' \
+--oracle_data_path 'oracle/382-419/DNATAG/LIGANDS_STATS' \
+--postgres_data_path 'postgres/382-419/dnatag/ligands_stats'
