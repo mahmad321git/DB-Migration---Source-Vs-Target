@@ -1,0 +1,20 @@
+{
+  "bblock_aliases": ["bblock_alias_id", "bblock_aliases_bblock_alias_id_seq", "dnatag_naman"],
+  "bblock_codons": ["bblock_codon_id", "bblock_codons_bblock_codon_id_seq", "dnatag_naman"],
+  "bblocks": ["bblock_id", "bblocks_bblock_id_seq", "dnatag_naman"],
+  "bc_histograms": ["bc_histogram_id", "bc_histograms_bc_histogram_id_seq", "dnatag_naman"],
+  "libraries": ["dl_libid", "libraries_dl_libid_seq", "dnatag_naman"],
+  "library_types": ["lib_type_id", "librarytype_libtypeid_v22_seq", "dnatag_naman"],
+  "libs_pools": ["lib_pool_id", "libs_pools_lib_pool_id_seq", "dnatag_naman"],
+  "ligand_structures": ["ligand_structure_id", "ligand_structures_ligand_structure_id_seq", "dnatag_naman"],
+  "ligands": ["ligand_id", "ligands_ligand_id_seq", "dnatag_naman"],
+  "mols_sequenced": ["mols_sequenced_id", "mols_sequenced_mols_sequenced_id_seq", "dnatag_naman"],
+  "ngs_stats": ["ngs_stats_id", "ngs_stats_ngs_stats_id_seq", "dnatag_naman"],
+  "pools": ["pool_id", "pools_pool_id_seq", "dnatag_naman"],
+  "ref_libs_sels": ["ref_lib_sel_id", "ref_libs_sels_ref_lib_sel_id_seq", "dnatag_naman"],
+  "selections": ["selection_id", "selections_selection_id_seq", "dnatag_naman"],
+  "selections_stats": ["selection_stats_id", "selections_stats_selection_stats_id_seq", "dnatag_naman"],
+  "template_tag_types": ["tag_type_id", "template_tag_types_tag_type_id_seq", "dnatag_naman"],
+  "template_tags": ["tag_id", "template_tags_tag_id_seq", "dnatag_naman"],
+  "templates": ["template_id", "templates_template_id_seq", "dnatag_naman"]
+}

@@ -1,0 +1,10 @@
+*.xml
+*.pyc
+*.idea
+venv/
+Reports/
+test_delete_partition_validation.py
+test_delete_subpartitions_validation.py
+test_add_partition_subpartition_validation.py
+test_cases/test_views_data.py
+test_view_data_validations.py

@@ -1,0 +1,14 @@
+{
+   "data":[
+
+     {
+                "source_table": "DNATAG_QA.RESULTS1m",
+                "target_table": "dnatag_qa.results1m",
+                "column": "RESULT_ID",
+                "lower_bound": 1,
+                "upper_bound": 1000000,
+                "spark_job": 8,
+                "numPartition": 8
+            }
+        ]
+}

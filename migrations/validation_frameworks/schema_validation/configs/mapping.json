@@ -1,0 +1,6 @@
+{
+  "VARCHAR2": ["character varying", "varchar", "character", "char", "text"],
+  "CHAR": ["character varying", "varchar", "character", "char", "text"],
+  "NUMBER": ["numeric", "smallint", "bigint", "double precision", "integer", "decimal", "real", "serial", "smallserial", "bigserial"],
+  "DATE": ["timestamp without time zone", "timestamp with time zone", "date", "time without time zone", "time with time zone"]
+}

@@ -1,0 +1,466 @@
+{
+    "rules": [
+        {
+            "rule-type": "transformation",
+            "rule-id": "1",
+            "rule-name": "1",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "NGS_STATS",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "2",
+            "rule-name": "2",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "NGS_STATS"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "3",
+            "rule-name": "3",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "4",
+            "rule-name": "4",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "NGS_STATS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+		
+		 {
+            "rule-type": "transformation",
+            "rule-id": "5",
+            "rule-name": "5",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "NRX_LOG",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "6",
+            "rule-name": "6",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "NRX_LOG"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "7",
+            "rule-name": "7",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "8",
+            "rule-name": "8",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "NRX_LOG"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+		
+		
+		 {
+            "rule-type": "transformation",
+            "rule-id": "9",
+            "rule-name": "9",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "POOLS",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "10",
+            "rule-name": "10",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "POOLS"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "11",
+            "rule-name": "11",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "12",
+            "rule-name": "12",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "POOLS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+		
+		
+		 {
+            "rule-type": "transformation",
+            "rule-id": "13",
+            "rule-name": "13",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "REF_LIBS_SELS",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "14",
+            "rule-name": "14",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "REF_LIBS_SELS"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "15",
+            "rule-name": "15",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "16",
+            "rule-name": "16",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "REF_LIBS_SELS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+		
+		 {
+            "rule-type": "transformation",
+            "rule-id": "17",
+            "rule-name": "17",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "SELECTIONS",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "18",
+            "rule-name": "18",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "SELECTIONS"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "19",
+            "rule-name": "19",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "20",
+            "rule-name": "20",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "SELECTIONS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+		
+		 {
+            "rule-type": "transformation",
+            "rule-id": "21",
+            "rule-name": "21",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "SELECTIONS_STATS",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "22",
+            "rule-name": "22",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "SELECTIONS_STATS"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "23",
+            "rule-name": "23",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "24",
+            "rule-name": "24",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "SELECTIONS_STATS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+		
+		
+		 {
+            "rule-type": "transformation",
+            "rule-id": "25",
+            "rule-name": "25",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATE_TAG_TYPES",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "26",
+            "rule-name": "26",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATE_TAG_TYPES"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "27",
+            "rule-name": "27",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "28",
+            "rule-name": "28",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATE_TAG_TYPES"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+		
+		 {
+            "rule-type": "transformation",
+            "rule-id": "29",
+            "rule-name": "29",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATE_TAGS",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "30",
+            "rule-name": "30",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATE_TAGS"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "31",
+            "rule-name": "31",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "32",
+            "rule-name": "32",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATE_TAGS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+		
+		 {
+            "rule-type": "transformation",
+            "rule-id": "33",
+            "rule-name": "33",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATES",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "34",
+            "rule-name": "34",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATES"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "35",
+            "rule-name": "35",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "36",
+            "rule-name": "36",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "TEMPLATES"
+            },
+            "rule-action": "include",
+            "filters": []
+        }
+		
+    ]
+}

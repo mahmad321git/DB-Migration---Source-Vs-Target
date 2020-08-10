@@ -1,0 +1,77 @@
+{
+    "rules": [
+        {
+            "rule-type": "transformation",
+            "rule-id": "1",
+            "rule-name": "1",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "RESULTS",
+                "column-name": "%"
+            },
+            "rule-action": "convert-lowercase",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "2",
+            "rule-name": "2",
+            "rule-target": "table",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "RESULTS"
+            },
+            "rule-action": "rename",
+            "value": "results",
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "3",
+            "rule-name": "3",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "DNATAG"
+            },
+            "rule-action": "rename",
+            "value": "dnatag",
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "4",
+            "rule-name": "4",
+            "object-locator": {
+                "schema-name": "DNATAG",
+                "table-name": "RESULTS"
+            },
+            "rule-action": "include",
+            "filters": [
+                {
+                    "filter-type": "source",
+                    "column-name": "SELECTION_ID",
+                    "filter-conditions": [
+                        {
+                            "filter-operator": "eq",
+                            "value": "29"
+                        },
+                        {
+                            "filter-operator": "eq",
+                            "value": "31"
+                        },
+						                        {
+                            "filter-operator": "eq",
+                            "value": "33"
+                        },
+                        {
+                            "filter-operator": "eq",
+                            "value": "34"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "bblock_aliases": "(1, 1, 'bb_name', 1, 'abc', 1, 'def', 1)",
+    "bblock_codons": "(1, 1, 'a', 'b', 'c', 'd', 'e', 'f', 1, 'g', 1, 'h', 1)",
+    "bblocks": "(1, 1, 1, 'sd', 1, 'aa', 'bb', 'cc', 1, 'dd')",
+    "bc_histograms": "(1, 2, 3, 4, 5)",
+    "libraries": "(0, 0, 0, 0, 'a', 'b', 'c', 'd', 'e', 'f', 0, 0, 0)",
+    "library_types": "(1, 'ggg')",
+    "libs_pools": "(1, 2, 3, 'sss')",
+    "ligand_structures": "(1, 'aa', 'bbbbbbbbbb', 3, 4, 5)",
+    "ligands": "(1, 2, 3, 4, 5, 6, 7, 'jj', 9, 10, 11, 12, 'a', 'fdd')",
+    "ligands_stats": "(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'a', 'b')",
+    "mols_sequenced": "(1, 2, 3, 4, 5, 6)",
+    "ngs_stats": "(1, 'q', 'v', 3, 4, 5, 6, 'b', 'n')",
+    "pools": "(1, 'pool name', 'pool description')",
+    "ref_libs_sels": "(1, 2, 3)",
+    "selections": "(0, 0, 'ww', 'ee', 'ff', 'fff', 'cc', 'hh', 'ff', 'ff', 'rr', 'rr', 'tt', 'tt', 'tt', 0, 'yy', 'uu', 0)",
+    "selections_stats": "(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)",
+    "template_tag_types": "(0, 'fgh')",
+    "template_tags": "(0, 0, 0, 0, 0, 0, 0, 0, 0, 'hhhh', 0, 'bbb', 'jk')",
+    "templates": "(0, 'aa', 'aaa', 0)"
+}

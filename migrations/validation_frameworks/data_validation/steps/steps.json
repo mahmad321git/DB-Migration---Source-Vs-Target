@@ -1,0 +1,12 @@
+[
+ {
+   "Name": "Spark application",
+   "Type":"CUSTOM_JAR",
+   "Jar":"command-runner.jar",
+   "Args":
+   [
+       "spark-submit",
+       "/home/hadoop/data_validation/nurix_test.py"
+   ]
+ }
+]
